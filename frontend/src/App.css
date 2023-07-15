@@ -4,6 +4,21 @@
 .header{
         position: "absolute";
         font-weight:'bold';
-        margin-left: 200px ;
-        background-color: red;
+        margin-left: 10px ;
+        margin-top: 18%;
+        font-size: 10px;
+        
+}
+.vertical {
+  border-left: 6px solid blue;
+  height: 200px;
+  position:absolute;
+  left: 50%;
+}
+.contact{
+  position: "absolute";
+        font-weight:'bold';
+        margin-left: 10px ;
+        margin-top: 1%;
+        font-size: 10px;
 }
