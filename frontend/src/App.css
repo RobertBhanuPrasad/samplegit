@@ -1,24 +1,64 @@
 .bhanu{
   color: blueviolet;
 }
+.number{
+  position: "absolute";
+  font-weight:bold;
+  margin-left: 300px ;
+  margin-top: 15%;
+  font-size: 18px;
+  /* text-align: left; */
+}
+.location{
+  position: "absolute";
+  font-weight:bold;
+  /* margin-left: 30px ; */
+  margin-top: 17%;
+  font-size: 18px;
+  text-align: center;
+}
+.mail{
+  position:"obsolute";
+  font-weight: bold;
+  margin-top: 0%;
+  float: right;
+  font-size: 18px;
+  margin-right: 50px;
+} 
 .header{
         position: "absolute";
         font-weight:'bold';
-        margin-left: 10px ;
-        margin-top: 18%;
+        margin-left: 30px ;
+        margin-top: 7%;
         font-size: 10px;
         
 }
 .vertical {
-  border-left: 6px solid blue;
+  border-left: 6px solid black;
   height: 200px;
   position:absolute;
   left: 50%;
 }
+.child {
+  display: inline-block;
+  vertical-align: right;
+}
 .contact{
   position: "absolute";
         font-weight:'bold';
-        margin-left: 10px ;
+        margin-left: 30px ;
         margin-top: 1%;
         font-size: 10px;
 }
+.number{
+  position:"obsolute";
+  margin-top: 0%;
+  float: left;
+  
+}
+/* .mail{
+  position:"obsolute";
+  margin-top: 0%;
+  float: right;
+  font-size: 25px;
+}  */
