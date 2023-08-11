@@ -5,11 +5,18 @@ const Login=()=>{
     const[pass,setpassword]=useState([]);
     const Submit=async()=>{
         try{
+        const res1=await axios.get("http://localhost:8000/valid/"+name);
+        if (res1.data){
+            alert(name+"name is already exist");
+    
+        }
+        else{
         const res=await axios.post("http://localhost:8000/input/"+name+"/"+pass);
         if(res)
         {
             alert("saved sucessfully!");
         }
+    }
     }
     catch(e)
     {

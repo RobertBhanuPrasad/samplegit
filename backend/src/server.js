@@ -13,8 +13,20 @@ app.get('/',(req,res)=>{
     res.json(data);
     res.send("Server running!");
 })
+// app.post('/input/:name/:pass',async(req,res)=>{
+//     const result=await db.collection("db").insertOne({name:req.params.name,password:req.params.pass})
+//     res.json(result);
+// })
+// app.post('/input/:name/:pass',async(req,res)=>{
+//     const result=await db.collection("db").insertOne({name:req.params.name,password:req.params.pass})
+//     res.json(result);
+// })
 app.post('/input/:name/:pass',async(req,res)=>{
     const result=await db.collection("db").insertOne({name:req.params.name,password:req.params.pass})
+    res.json(result);
+})
+app.get('/valid/:name',async(req,res)=>{
+    const result=await db.collection("db").findOne({name:req.params.name})
     res.json(result);
 })
 connectToDB(()=>{
