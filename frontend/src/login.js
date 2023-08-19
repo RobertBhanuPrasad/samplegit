@@ -19,7 +19,7 @@ const Login=()=>{
     const Submit=async()=>{
         try{
           {
-        const res=await axios.post("http://localhost:8000/enter/"+mail+"/"+pass);
+        const res=await axios.post("https://server-qcrd.onrender.com/enter/"+mail+"/"+pass);
         if(res)
         {
             alert("login sucessfully!");

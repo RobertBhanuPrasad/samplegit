@@ -20,13 +20,13 @@ const Signup=()=>{
 
     const Submit=async()=>{
         try{
-        const res1=await axios.get("http://localhost:8000/valid/"+mail);
+        const res1=await axios.get("https://server-qcrd.onrender.com/valid/"+mail);
         if (res1.data){
             alert(mail+ " mail is already exist go and login");
     
         }
         else{
-        const res=await axios.post("http://localhost:8000/input/"+name+"/"+pass+"/"+mail);
+        const res=await axios.post("https://server-qcrd.onrender.com/input/"+name+"/"+pass+"/"+mail);
         if(res)
         {
             alert("saved sucessfully!");

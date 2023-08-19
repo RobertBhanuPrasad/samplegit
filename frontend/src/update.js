@@ -8,7 +8,7 @@ function Update() {
 
   const handleUpdatePassword = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/update/"+mail+"/"+newPassword);
+      const response = await axios.post("https://server-qcrd.onrender.com/update/"+mail+"/"+newPassword);
       console.log(response.data);
       setMessage(response.data.message);
     } catch (error) {
