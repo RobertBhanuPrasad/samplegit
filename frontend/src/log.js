@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from "react";
 import axios from "axios";
 import Login from './login';
+import './App.css';
 const Signup=()=>{
     const[name,setname]=useState([]);
     const[pass,setpassword]=useState([]);
@@ -43,6 +44,7 @@ const Signup=()=>{
     }
     return(
         <>
+  
         <div className="container">
         <input type="text" placeholder="name" onChange={(e)=>setname(e.target.value)}></input><br></br>
         <input type="text" placeholder="mail" onChange={(e)=>setmail(e.target.value)}></input><br></br>

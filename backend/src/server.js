@@ -25,6 +25,11 @@ app.post('/enter/:mail/:pass',async(req,res)=>{
     const result=await db.collection("db").insertOne({mail:req.params.mail,password:req.params.pass})
     res.json(result);
 })
+
+app.get('/gets',async(req,res)=>{
+    const result=await db.collection("bp").find().toArray()
+    res.json(result)
+})
 app.get('/valid/:mail',async(req,res)=>{
     const result=await db.collection("bp").findOne({mail:req.params.mail})
     res.json(result);

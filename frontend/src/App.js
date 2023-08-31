@@ -11,6 +11,7 @@ import Signup from './log';
 import Update from './update';
 import Login from './login';
 import "./styles.css";
+import Success from './success';
 
 function App(){
   return(
@@ -20,6 +21,7 @@ function App(){
       <Route path='/' element={<Signup/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/update' element={<Update/>}></Route>
+      <Route path='/success' element={<Success/>}></Route>
     </Routes>
     </BrowserRouter>
     {/* <Signup/> */}
@@ -27,3 +29,28 @@ function App(){
   );
 }
 export default App;
+
+
+// <style>
+//             .body{
+//             background-color:black;
+//             }
+//             @media only screen and (max-width:480px){
+//                 .body{
+//                     background-color: blue;
+//                 }
+//             }
+//             @media only screen and (max-width:1000px){
+//                 .body{
+//                     background-color: red;
+//                 }
+//             }
+//             @media only screen and (max-width:800px){
+//                 .body{
+//                     background-color: pink;
+//                 }
+//             }
+//         </style>
+//         <div class="body">
+//            <p>this is bhanu</p>
+//         </div>

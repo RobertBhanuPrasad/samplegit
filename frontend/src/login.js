@@ -1,9 +1,11 @@
 import React,{useState, useEffect} from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const Login=()=>{
     const[mail,setmail]=useState([]);
     const[pass,setpassword]=useState([]);
     const [data, setData] = useState([]);
+    const Navigate=useNavigate();
 
   useEffect(() => {
     // Fetch data from the backend
@@ -23,6 +25,7 @@ const Login=()=>{
         if(res)
         {
             alert("login sucessfully!");
+            Navigate('/success')
         }
     }
     }
