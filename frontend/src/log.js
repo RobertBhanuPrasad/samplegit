@@ -46,15 +46,38 @@ const Signup=()=>{
         <>
   
         <div className="container">
-        <input type="text" placeholder="name" onChange={(e)=>setname(e.target.value)}></input><br></br>
-        <input type="text" placeholder="mail" onChange={(e)=>setmail(e.target.value)}></input><br></br>
-        <input type="password" placeholder="password" onChange={(e)=>setpassword(e.target.value)}></input><br></br>
-        <input type="submit" onClick={Submit} value="sub"/><br></br>
+        <input type="text" placeholder="name" onChange={(e)=>setname(e.target.value)}></input><br></br><br></br>
+        <input type="text" placeholder="mail" onChange={(e)=>setmail(e.target.value)}></input><br></br><br></br>
+        <input type="password" placeholder="password" onChange={(e)=>setpassword(e.target.value)}></input><br></br><br></br>
+        <input type="submit" onClick={Submit} value="sub"/><br></br><br></br>
         <input type="submit" onClick={Login} value="Login"/>
         
         </div>
 
-        
+        <style >
+      {`.container {
+          
+
+          @media (min-width: 1000px) {
+            background-color:blue;
+            // width:50px;
+            // height:20px;
+            align-item:center;
+            justify-content:center;
+
+          }
+
+        }
+        input{
+          @media (min-width:1000px){
+            // width:20px;
+            // height:20px;
+          }
+        }
+      `}
+
+    </style>
+
         </>
     );
 }
